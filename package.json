@@ -1,5 +1,5 @@
 {
-  "name": "cosmos-validator-rewards",
+  "name": "cosmoshub-transfers",
   "version": "0.1.0",
   "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
@@ -8,11 +8,11 @@
     "prepare:osmosis": "mustache config/osmosis.json subgraph.template.yaml > subgraph.yaml",
     "codegen": "graph codegen",
     "build": "graph build",
-    "create-local": "graph create cosmos-validator-rewards --node http://127.0.0.1:8020",
-    "deploy-local": "graph deploy cosmos-validator-rewards -l v0.1.0 --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
-    "remove-local": "graph remove cosmos-validator-rewards --node http://127.0.0.1:8020",
-    "create": "graph create cosmos-validator-rewards --node https://api.thegraph.com/deploy/",
-    "deploy": "graph deploy cosmos-validator-rewards --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
+    "create-local": "graph create cosmoshub-transfer --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy cosmoshub-transfer -l v0.1.0 --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
+    "remove-local": "graph remove cosmoshub-transfer --node http://127.0.0.1:8020",
+    "create-hosted": "graph create cosmoshub-transfer --product hosted-service --node https://api.thegraph.com/deploy/",
+    "deploy-hosted": "graph deploy --product hosted-service junta/cosmoshub-transfer"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.0",

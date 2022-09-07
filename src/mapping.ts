@@ -1,16 +1,19 @@
-import { cosmos } from "@graphprotocol/graph-ts";
-import { Reward } from "../generated/schema";
+import { cosmos, BigInt } from "@graphprotocol/graph-ts";
+import { Transfer } from "../generated/schema";
 
-export function handleReward(data: cosmos.EventData): void {
+export function handleTransfer(data: cosmos.EventData): void {
   const height = data.block.header.height;
 
   const amount = data.event.getAttributeValue("amount");
-  const validator = data.event.getAttributeValue("validator");
+  const recipient = data.event.getAttributeValue("recipient");
+  const sender = data.event.getAttributeValue("sender");
 
-  let reward = new Reward(`${height}-${validator}`);
+  let transfer = new Transfer(`${height}-${recipient}`);
 
-  reward.amount = amount;
-  reward.validator = validator;
+  // remove uatom and convert to BigInt
+  transfer.uatomAmount = BigInt.fromString(amount.slice(0, -5));
+  transfer.recipient = recipient;
+  transfer.sender = sender;
 
-  reward.save();
+  transfer.save();
 }

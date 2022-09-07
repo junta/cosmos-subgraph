@@ -1,5 +1,6 @@
-type Reward @entity {
+type Transfer @entity {
   id: ID!
-  amount: String
-  validator: String
+  uatomAmount: BigInt
+  recipient: String
+  sender: String
 }
