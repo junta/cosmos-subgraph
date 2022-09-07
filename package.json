@@ -1,7 +1,7 @@
 {
   "name": "cosmoshub-transfers",
   "version": "0.1.0",
-  "repository": "https://github.com/graphprotocol/example-subgraph",
+  "repository": "https://github.com/junta/cosmos-subgraph",
   "license": "MIT",
   "scripts": {
     "prepare:cosmoshub": "mustache config/cosmoshub.json subgraph.template.yaml > subgraph.yaml",
