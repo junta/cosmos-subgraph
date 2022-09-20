@@ -1,6 +1,12 @@
-type Transfer @entity {
+type Delegation @entity {
   id: ID!
-  uatomAmount: BigInt
-  recipient: String
-  sender: String
+  delegatorAddress: String
+  validatorAddress: String
+  amount: Coin
+}
+
+type Coin @entity {
+  id: ID!
+  denom: String
+  amount: String
 }

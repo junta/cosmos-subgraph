@@ -1,12 +1,12 @@
 specVersion: 0.0.5
-description: Validator Rewards Example
+description: Osmosis Example
 repository: https://github.com/graphprotocol/example-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: cosmos
-    name: {{ name }}
-    network: {{ network }}
+    name: { { name } }
+    network: { { network } }
     source:
       startBlock: 0
     mapping:

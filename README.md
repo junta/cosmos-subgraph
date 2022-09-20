@@ -1,5 +1,7 @@
 # CosmosHub Transfers Example
 
+https://github.com/cosmos/cosmos-sdk/blob/13378bd2cfb9695da6477494e449b0a3bca9bc94/x/bank/spec/04_events.md
+
 ## Generating a manifest
 
 The subgraph is compatible with multiple Cosmos networks so before building the subgraph you need to generate a manifest file for the network of your choice. In case of the Cosmos Hub network, run the following command:

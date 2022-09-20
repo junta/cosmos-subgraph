@@ -1,5 +1,5 @@
 {
-  "name": "cosmoshub-transfers",
+  "name": "osmosis-validator-delegations",
   "version": "0.1.0",
   "repository": "https://github.com/junta/cosmos-subgraph",
   "license": "MIT",
@@ -11,8 +11,8 @@
     "create-local": "graph create cosmoshub-transfer --node http://127.0.0.1:8020",
     "deploy-local": "graph deploy cosmoshub-transfer -l v0.1.0 --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
     "remove-local": "graph remove cosmoshub-transfer --node http://127.0.0.1:8020",
-    "create-hosted": "graph create cosmoshub-transfer --product hosted-service --node https://api.thegraph.com/deploy/",
-    "deploy-hosted": "graph deploy --product hosted-service junta/cosmoshub-transfer"
+    "create-hosted": "graph create osmosis-transfer --product hosted-service --node https://api.thegraph.com/deploy/",
+    "deploy-hosted": "graph deploy --product hosted-service junta/osmosis-transfer"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.0",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "babel-register": "^6.26.0"
+    "babel-register": "^6.26.0",
+    "as-proto": "^0.2.3"
   }
 }

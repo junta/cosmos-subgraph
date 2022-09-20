@@ -435,6 +435,11 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+as-proto@^0.2.3:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/as-proto/-/as-proto-0.2.7.tgz#16a9f5c4f716f72e8c259dcfb825bedfba04b1a1"
+  integrity sha512-bUPk71lZd1no8YT+pT0KKr4kHn5gSoNm9mJcZ8oAXgrTf68urduin1lWSfUa5JvH5Oh+UnB7W4F0jWntR3f/Ww==
+
 asap@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
